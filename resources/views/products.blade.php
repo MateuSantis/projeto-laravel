@@ -1,9 +1,12 @@
-    @extends('layouts.main')
 
-    @section('title', 'Produtos')
+@extends('layouts.main')
 
-    @section('content')
+@section('title', 'Produtos')
 
-        <h1>Tela de Produtos</h1>
+@section('content')
 
-    @endsection
+    <h1>Tela de Produtos</h1>
+
+@endsection
+
+@extends('layouts.main')

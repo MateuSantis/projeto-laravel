@@ -1,7 +1,9 @@
 @extends('layouts.main')
-    @section('title', 'HDC Events')
+
+@section('title', 'HDC Events')
     
-    @section('content')
+@section('content')
+
         <h1>Algum Título</h1>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))

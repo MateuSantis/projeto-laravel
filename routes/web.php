@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\EventController;
+
+Route::get('/', [EventController::class, 'index']);
+Route::get('/events/create', [EventController::class, 'create']);
 
 
 Route::get('/contact', function () {
@@ -23,6 +24,11 @@ Route::get('/contact', function () {
 });
 
 Route::get('/produtos', function () {
-    return view('products');
+    return view('products', ['busca' => $busca]);
 });
 
+Route::get('/produtos_teste/{id?}', function ($id = null) {
+    return view('products', ['id' => $id]);
+});
+
+?>
