@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projetolaravel:
+    image: projetolaravel
+    build:
+      context: .
+      dockerfile: ./Dockerfile
